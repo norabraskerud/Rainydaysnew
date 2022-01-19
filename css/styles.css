@@ -132,23 +132,17 @@
     
     }
   
-  h1{
+  h1, h2, h3, h4 {
     font-family: 'Bebas Neue';
     color: #122140;
     text-align: center;
     margin-top: 2vw;
    }
   
-    /* about page */
-  
-  .abouttext{
-    font-family: 'Bebas Neue';
-    font-size: 17px;
-    position: relative;
-    text-align: center;
-    padding: auto;
-   }
 
    /* Women page */
 
-   
+   .add{
+       font-family: 'bebas neue';
+       background-color: red;
+       }

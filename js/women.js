@@ -1,22 +1,31 @@
-const baseUrl = "https://norabraskerud.com/wp-json/wc/store/products";
-const productsContainer = document.querySelector(".products")
+const API_URL = "https://norabraskerud.com/wp-json/wc/store/products";
+const resultsContainer = document.querySelector(".results");
 
+async function callApi() {
+    try {
+        const response = await fetch(API_URL);
+        const results = await response.json();
 
-async function getProducts(url){
-  const response = await fetch(url);
-  const products = await response.json();
-  console.log(products)
-  
-  products.forEach(function(product){
-    productsContainer.innerHTML += `
-    <div class="product"><h2>${product.name}</h2>
-    <div class="product-price"><p>${product.prices}</p>
-    <div class="product-images" style="background-images:url('${product.permalink}')
-    <div class="sizes">${product.variations}</div>
-    </div>`
-  })
+        createHtml(results);
+    }
+    
+    catch (error) {
+        console.log(error);
+        resultsContainer.innerHTML = error;
+    }
 }
 
-getProducts(baseUrl);
+callApi();
 
-                    
+
+function createHtml(results){
+    for (let i = 0; i < results.length; i++) {
+        console.log(results[i])
+        resultsContainer.innerHTML +=   `<div class="card">                  
+                                        <a href="details.html?id=${results.id}"</a>                                
+                                        <h3 class="name">${results[i].name}</h3>
+                                        <img scr="${results[i].url}">
+                                        <button class="add>${results[i].add_to_cart}</button>
+                                        `;
+    }
+}
