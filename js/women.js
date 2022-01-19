@@ -5,6 +5,7 @@ async function callApi() {
     try {
         const response = await fetch(API_URL);
         const results = await response.json();
+        console.log(results);
 
         createHtml(results);
     }
