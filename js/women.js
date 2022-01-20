@@ -20,22 +20,25 @@ callApi();
 
 function createHtml(results){
     for (let i = 0; i < results.length; i++) {
+        console.log(results[i].images[0].src)
         console.log(results[i])
 
 var object = {
     variations: [1, 2, 3, 4, 5]
 }
 
-console.log(object)
+
+
+
 
 
         resultsContainer.innerHTML +=   `<div class="card">                  
                                         <a href="details.html"></a>                                
                                         <h3 class="name">${results[i].name}</h3>
-                                        <img scr="${results[i].url}">
-                                        <button class="sizes">${JSON.stringify(object.variations)}</button>
+                                        <img scr="${results[i].images[0].src}">
+                                        <button class="sizes">${results[i].attributes[0].name}</button>
                                         <div class="price>${results[i].price}</div>
-                                        <button class="select">${results[i].add_to_cart}</button>
+                                        <button class="select">${results[i].add_to_cart[0]}</button>
                                         `;
     }
 }
