@@ -9,33 +9,25 @@ console.log(queryString);
 const params = new URLSearchParams(queryString);
 
 console.log(params);
+console.log(id);
 
 const id = params.get("id");
 
-
-if (id === null) {
-    location.href = "/index.html";
-}
-
 const urlNew = "https://norabraskerud.com/wp-json/wc/store/products" + id;
-
-
-iddisplay.innerHTML = id; 
 
 
 async function newApiCall() {
 
     try{
-        const response = await fetch(urlNew, options);
+        const response = await fetch(urlNew);
         const results = await response.json();
 
-        console.log(results.Search);
+        console.log(results);
 
-        const det = results.Search[0];
+        const det = results;
 
         createHtml(det);
 
-        
         
     } catch(error) {
         console.log(error);
@@ -45,10 +37,17 @@ async function newApiCall() {
 
 newApiCall();
 
-function createHtml(det) {
-    console.log(det);
-    DetailContainer.innerHTML = `<h1> ${det.Title} </h1>
-                                 <div class="title"> ${det.Type} </div>
-                                 <div class="poster"> ${det.Poster}</div>
-                                 <div class="year"> ${det.ImdbID}</div>`;
+function createHtml(det){
+    for (let i = 0; i < det.length; i++) {
+        
+        resultsContainer.innerHTML += `<div class="card">
+                                        <h1> ${det.name} </h1>
+                                        <h3 class="name">${results[i].name}</h3>
+                                        <div class="img">${results[i].images[0].src}</div>
+                                        <button class="sizes">${results[i].attributes[0].name}</button>
+                                        <div class="price>${results[i].prices.price}</div>
+                                        <button class="select">${results[i].add_to_cart[0]}</button>
+                                        </div>`;
 }
+}
+
