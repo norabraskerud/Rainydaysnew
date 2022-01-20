@@ -142,7 +142,12 @@
 
    /* Women page */
 
-   .add{
-       font-family: 'bebas neue';
-       background-color: red;
-       }
+   
+  .sizes{
+    font-family: 'bebas neue';
+  }
+
+  .price{
+    font-family: 'bebas neue';
+    color: #122140;
+  }

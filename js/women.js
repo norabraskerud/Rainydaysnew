@@ -20,27 +20,20 @@ callApi();
 
 function createHtml(results){
     for (let i = 0; i < results.length; i++) {
-        console.log(results[i].images[0].src)
-        console.log(results[i])
-
-var object = {
-    variations: [1, 2, 3, 4, 5]
-}
-
-
-
-
-
+        console.log(results[i].images[0].src);
+        console.log(results[i].prices.price);
+        console.log(results[i].add_to_cart)
+        console.log(results[i].name);
+        
 
         resultsContainer.innerHTML +=   `<div class="card">                  
-                                        <a href="details.html"></a>                                
+                                        <a href="details.html?id=${results[i].id}"</a>                                
                                         <h3 class="name">${results[i].name}</h3>
-                                        <img scr="${results[i].images[0].src}">
+                                        <div class="img">${results[i].images[0].src}</div>
                                         <button class="sizes">${results[i].attributes[0].name}</button>
-                                        <div class="price>${results[i].price}</div>
+                                        <div class="price>${results[i].prices.price}</div>
                                         <button class="select">${results[i].add_to_cart[0]}</button>
                                         `;
     }
 }
-
 
