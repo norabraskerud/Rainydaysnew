@@ -8,18 +8,17 @@ console.log(queryString);
 
 const params = new URLSearchParams(queryString);
 
-console.log(params);
 console.log(id);
 
 const id = params.get("id");
 
-const urlNew = "https://norabraskerud.com/wp-json/wc/store/products" + id;
+const url = "https://norabraskerud.com/wp-json/wc/store/products" + id;
 
 
 async function newApiCall() {
 
     try{
-        const response = await fetch(urlNew);
+        const response = await fetch(url);
         const results = await response.json();
 
         console.log(results);
