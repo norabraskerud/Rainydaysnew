@@ -10,7 +10,7 @@ const params = new URLSearchParams(queryString);
 
 const id = params.get("id");
 
-const url = "https://norabraskerud.com/wp-json/wc/store/products/" + id;
+const url = "https://norabraskerud.com/wp-json/wc/store/products/" + id + "?key=ck_91349797f4eda21317716875499de897f0c2a87f";
 
 
 async function newApiCall() {
