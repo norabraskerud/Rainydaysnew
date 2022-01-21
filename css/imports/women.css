@@ -1,20 +1,9 @@
-h1, h2 {
+h1, h2, h3, h4 {
     font-family: 'Bebas Neue';
     color: #122140;
     text-align: center;
     margin-top: 2vw;
    }
   
-   .sizes, .select {
-    font-family: 'bebas neue';
-  }
 
-  
 
-  h3{
-    font-family: 'Bebas Neue';
-    font-size: 1.5vw;
-    text-align: center;
-    text-decoration: none;
-    color:#122140;
-  }
