@@ -1,4 +1,4 @@
-const API_URL = "https://norabraskerud.com/wp-json/wc/store/products";
+const API_URL = "https://norabraskerud.com/wp-json/wc/store/products/";
 const resultsContainer = document.querySelector(".results");
 
 async function callApi() {
@@ -22,6 +22,7 @@ function createHtml(results){
     for (let i = 0; i < results.length; i++) {
         console.log(results[i])
         console.log(results[i].id);
+        console.log(results[i].prices.price);
         
 
         resultsContainer.innerHTML +=   `<a href="details.html?id=${results[i].id}" class="card">                                                  
