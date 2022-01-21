@@ -2,9 +2,9 @@
 <html>
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" @media screen and (max-width: 800px)/>
     <meta name="description" content="Site where you can buy rain jackets" />
-    <title>RainyDays | Women</title>
+    <title>RainyDays | My profil</title>
     <link href='https://fonts.googleapis.com/css?family=Bebas Neue' rel='stylesheet'>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link href="css/styles.css" rel="stylesheet" />
@@ -20,13 +20,12 @@
     
     <input type="searchbutton" placeholder="What are you looking for?">
       
-    
     <div class="falld">
       <button class="menubtn"> <img src="images/Icon material-menu.png" style="width: 30px;"alt="menu icon"></button>
       <div class="falld-content">
         <ul class="menu">
           <li> <a href="index.html">HOME</a> </li>
-          <li> <a href="women.html"class="active">WOMEN</a></li>
+          <li> <a href="women.html">WOMEN</a></li>
           <li> <a href="#">MEN</a> </li>
           <li> <a href="contact.html">CONTACT</a> </li>
           <li> <a href="about.html">ABOUT</a></li>
@@ -44,21 +43,54 @@
     </div>
     
 </header>
+  
+  <main class="container1">
+    <div id="message"></div>
+     <h1>REGISTER</h1>
+      <form>
+        <div>
+          <label>
+             Full name (required)
+            <input name="fullname" id="fullname" />
+          </label>
+        </div>
 
-<main>
-<h1>WOMEN'S RAIN JACKETS</h1>
+        <div>
+          <label>
+              Address (minimum 10 characters)
+              <input name="address" id="address" />
+          </label>
+        </div>
 
-<div class="results"></div>
+        <div>
+          <label>
+              Email (required)
+              <input name="email" id="email" />
+          </label>
+            <br>
+            <button a href="checkoutcomplete.html" disabled>Confirm</button>
+        </div>
 
+        <div>
+          <h1>LOG IN</h1>
+            <label>
+              Email
+              <input name="email1" id="email1"/>
+            </label>
+        </div>
 
-</main> 
+      <button a href="checkoutcomplete.html" disabled>Log in</button>
+  </main>
+    </form>
+
+</main>
 
 <footer>
-<img src="images/Logo.jpg" alt="small logo" style="width: 10%;">
+  <img src="Images/Logo.jpg" alt="Logo in small" style="width: 10%">
 </footer>
 
-<script src="js/women.js"></script>
-
+<script src="js/myprofil.js"></script>
 
 </body>
 </html>
+

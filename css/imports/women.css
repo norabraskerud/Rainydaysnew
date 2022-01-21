@@ -5,6 +5,10 @@ h1, h2, h3, h4 {
     margin-top: 2vw;
    }
   
-   .sizes, .prices{
+   .sizes, .prices {
     font-family: 'bebas neue';
+  }
+
+  .select{
+    font-family: 'Bebas Neue';
   }

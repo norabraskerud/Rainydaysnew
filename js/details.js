@@ -22,7 +22,6 @@ async function newApiCall() {
         console.log(results);
 
         createHtml(results);
-
         
     } catch(error) {
         console.log(error);
