@@ -48,3 +48,7 @@ h1 {
 .bg-dark {
     background-color: var(--grey) !important;
 }
+
+.jackettext{
+    text-transform:lowercase;
+}
