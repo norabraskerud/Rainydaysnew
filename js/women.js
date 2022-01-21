@@ -27,7 +27,7 @@ function createHtml(results){
 
         resultsContainer.innerHTML +=   `<a href="details.html?id=${results[i].id}" class="card">                                                  
                                         <h3 class="name">${results[i].name}</h3>
-                                        <div class="img">${results[i].images[0].src}</div>
+                                        <div class="product-images" style="background-image:url>${results[i].images[0].src}</div>
                                         <button class="sizes">${results[i].attributes[0].name}</button>
                                         <div class="price>${results[i].prices.price}</div>
                                         <button class="select">${results[i].add_to_cart[0]}</button>
