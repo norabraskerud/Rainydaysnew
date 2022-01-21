@@ -1,6 +1,4 @@
 const DetailContainer = document.querySelector(".container3");
-const iddisplay = document.querySelector(".id-test");
-const message = document.querySelector(".message");
 
 const queryString = document.location.search;
 
@@ -19,12 +17,17 @@ async function newApiCall() {
         const response = await fetch(url);
         const results = await response.json();
 
-        console.log(results);
+        
+        console.log(results)
+        console.log(results.name);
+        console.log(results.prices.price);
+        console.log(results.add_to_cart.text)
+        console.log(results.images[0].src);
 
         createHtml(results);
+      
         
     } catch(error) {
-        console.log(error);
         DetailContainer.innerHTML = error;
     }
 }
@@ -32,18 +35,15 @@ async function newApiCall() {
 newApiCall();
 
 function createHtml(results){
-    for (let i = 0; i < results.length; i++) {
-        console.log(results[i]);
-
         
-        resultsContainer.innerHTML += `<div class="card">
-                                        <h1> ${results[i].name} </h1>
-                                        <h3 class="name">${results[i].name}</h3>
-                                        <div class="img">${results[i].images[0].src}</div>
-                                        <button class="sizes">${results[i].attributes[0].name}</button>
-                                        <div class="price>${results[i].prices.price}</div>
-                                        <button class="select">${results[i].add_to_cart[0]}</button>
-                                        </div>`;
+        DetailContainer.innerHTML +=   `                                                
+                                         <h1 class="name">${results.name}</h1>
+                                        <div class="results-image" 
+                                        style="background-image: url('${results.images[0].src}')"></div>
+                                        <h3 class="price">${results.prices.price}</h3>
+                                         <button class="select">${results.add_to_cart.text}</button>
+                                        `;
 }
-}
+
+
 
