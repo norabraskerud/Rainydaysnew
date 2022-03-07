@@ -27,13 +27,15 @@ function createHtml(results){
         
         
 
-        resultsContainer.innerHTML +=   `<a href="details.html?id=${results[i].id}" class="card">                                                  
+        resultsContainer.innerHTML +=   `<div class="card1">
+                                        <a href="details.html?id=${results[i].id}" class="card">                                                  
                                         <h1 class="name">${results[i].name}</h1>
                                         <div class="results-image" 
                                          style="background-image: url('${results[i].images[0].src}')"></div>
                                         <h3 class="price">${results[i].prices.price}</h3>
                                         <button class="select">${results[i].add_to_cart.text}</button>
-                                        </a>`;
+                                        </a>
+                                        </div>`;
     }
 }
 
