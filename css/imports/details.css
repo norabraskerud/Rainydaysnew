@@ -15,6 +15,24 @@
     display: none;
 }
 
-.select{
-    
-}
+
+.select {
+    font-family: "montserrat";
+    font-size: 20px;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+    background: #D16C0D;
+    border-radius: 5px;
+    border: 0;
+    color: black;
+    padding: 10px;
+    transition: all 0.3s;
+    font-weight: 700;
+  }
+  
+  .select:hover {
+    background-color: white;
+    color: #122140;
+    border: 2px solid #122140;
+  }
