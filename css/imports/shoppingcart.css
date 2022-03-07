@@ -1,0 +1,82 @@
+
+  /* shoppingcart page */
+
+  .cartinfo{
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  th{
+    text-align: left;
+    padding: 5px;
+    color: white;
+    background-color: #122140;
+    font-weight: normal;
+  }
+
+.inputnumber{
+    width: 50px;
+    height: 30px;
+    padding: 5px;
+  }
+
+  td a{
+    color: #122140;
+    font-size: 12px;
+  }
+
+  td img{
+    width: 60px;
+    height: 90px;
+    margin-left: 0px;
+    margin-top: 10px;
+  }
+
+.cart{
+  border: 1px solid #122140;
+  padding-left: auto;
+  text-align: left;
+  font-size: 1vw;
+  position: absolute;
+}
+
+.small-container{
+  margin: auto;
+  border: solid #122140;
+}
+
+.total-price{
+  display: flex;
+  justify-content: flex-end;
+}
+
+.total-price table{
+  border-top: 3px solid #122140;
+  opacity: 80%;
+  width: 100%;
+  max-width: 480px;
+}
+
+ .button4 button{
+   text-decoration: none;
+  font-family: 'bebas neue';
+  font-size: 18px;
+  width: 120px;
+  color: white;
+  text-align: center;
+  background-color:#D16C0D;
+  margin-bottom: 10px;
+  margin-left: 630px;
+  border-radius: 50px 50px 50px 50px;
+ 
+ }
+
+ .btn-remove{
+   font-family: 'bebas neue';
+   background-color: #D16C0D;
+   color: white;
+   border-radius: 50px 50px 50px 50px;;
+   margin-left: 20px;
+   margin-top: -5px;
+ }
+

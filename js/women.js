@@ -1,4 +1,4 @@
-const API_URL = "https://norabraskerud.com/wp-json/wc/store/products/";
+const API_URL = "https://n-braskerud.com/wp-json/wc/store/products/";
 const resultsContainer = document.querySelector(".results");
 
 async function callApi() {

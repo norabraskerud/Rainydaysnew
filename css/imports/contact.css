@@ -1,0 +1,21 @@
+
+
+table{
+    font-family: 'Bebas Neue';
+    color: #122140;
+    text-align: center;
+    padding: 15px;
+    border-collapse:separate;
+  }
+  
+  th, td{
+    padding: 14px;
+    width: 400px;
+  }
+  
+  .sosicon{
+    color:#122140;
+    position: relative;
+    margin-left: 980px;
+    margin-top: -60px;
+  }

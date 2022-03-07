@@ -1,0 +1,22 @@
+
+/* checkout page */
+
+.container2{
+    background:#f3f3f3;
+    font-family: 'bebas neue';
+    align-content: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    font-size: 1vw;
+    line-height: 30px;
+    padding: 3rem;
+    border-radius: 5px;
+    }
+  
+  .modal-content1 {
+    background-color: white;
+    margin: 5% auto 15% auto; 
+    border: 1px solid #888;
+    font-family: 'Bebas Neue';
+    color: #122140;
+   }
