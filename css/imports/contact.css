@@ -1,11 +1,13 @@
-
+  .form-main{
+    margin-left: 150px;
+  }
 
   form {
     margin-top: 20px;
-    max-width:620px; 
-    margin: auto; 
+    margin:50px auto; 
     padding:70px;
     background-color: #f3f3f3;
+    width: 100%;
   
   }
   
