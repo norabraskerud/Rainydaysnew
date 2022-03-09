@@ -33,7 +33,7 @@ function createHtml(results){
                                         <div class="results-image" 
                                          style="background-image: url('${results[i].images[0].src}')"></div>
                                         <h3 class="price">${results[i].prices.price}</h3>
-                                        <button class="select">${results[i].add_to_cart.text}</button>
+                                        <button class="btn">${results[i].add_to_cart.text}</button>
                                         </a>
                                         </div>`;
     }

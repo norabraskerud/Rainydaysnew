@@ -1,38 +1,19 @@
-.details-title {
-    margin-bottom: 0.7em;
+.details-image {
+  margin-bottom: 1em;
+  height: 990px;
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
-
-.results-image {
-    margin-bottom: 1em;
-    height: 290px;
-    background-position: top center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
 
 .hidden {
-    display: none;
+  display: none;
 }
 
+.detailsdesign {
+  text-align: center;
+}
 
-.select {
-    font-family: "montserrat";
-    font-size: 20px;
-    text-decoration: none;
-    border: none;
-    cursor: pointer;
-    background: #D16C0D;
-    border-radius: 5px;
-    border: 0;
-    color: black;
-    padding: 10px;
-    transition: all 0.3s;
-    font-weight: 700;
-  }
-  
-  .select:hover {
-    background-color: white;
-    color: #122140;
-    border: 2px solid #122140;
-  }
+.jackettext {
+  text-align: center;
+}

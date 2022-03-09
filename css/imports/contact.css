@@ -1,67 +1,66 @@
-  .form-main{
-    margin-left: 150px;
-  }
+.form-main {
+  margin-left: 150px;
+}
 
-  form {
-    margin-top: 20px;
-    margin:50px auto; 
-    padding:70px;
-    background-color: #f3f3f3;
-    width: 100%;
-  
-  }
-  
-  .form-error {
-      font-family:'Montserrat';
-      display:none;
-      color: red;
-      font-size: 1.5rem;
-      margin-bottom: 7px;
-  }
-  
-  .feedback-input {
-    color:black;
-    font-family: Helvetica, Arial, sans-serif;
-    font-weight:500;
-    font-size: 18px;
-    border-radius: 5px;
-    line-height: 22px;
-    background-color: white;
-    border:2px solid #2C4859;
-    transition: all 0.3s;
-    padding: 13px;
-    margin-bottom: 15px;
-    width:100%;
-    box-sizing: border-box;
-    outline:0;
-  }
-  
-  .feedback-input:focus { 
-      border:2px solid #D16C0D; 
-  }
-  
-  textarea {
-    height: 150px;
-    line-height: 150%;
-    resize:vertical;
-  }
-  
-  .btnPosition {
-    font-family: 'Montserrat';
-    width: 100%;
-    background:#2C4859;
-    border-radius:5px;
-    border:0;
-    cursor:pointer;
-    color:white;
-    font-size:24px;
-    padding-top:10px;
-    padding-bottom:10px;
-    transition: all 0.3s;
-    margin-top:-4px;
-    font-weight:700;
-  }
-  
-  [type="submit"]:hover { 
-      background:#D16C0D; 
-  }
+form {
+  margin-top: 20px;
+  margin: 50px auto;
+  padding: 70px;
+  background-color: #f3f3f3;
+  width: 100%;
+}
+
+.form-error {
+  font-family: "Montserrat";
+  display: none;
+  color: red;
+  font-size: 1.5rem;
+  margin-bottom: 7px;
+}
+
+.feedback-input {
+  color: black;
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  border-radius: 5px;
+  line-height: 22px;
+  background-color: white;
+  border: 2px solid #2c4859;
+  transition: all 0.3s;
+  padding: 13px;
+  margin-bottom: 15px;
+  width: 100%;
+  box-sizing: border-box;
+  outline: 0;
+}
+
+.feedback-input:focus {
+  border: 2px solid #d16c0d;
+}
+
+textarea {
+  height: 150px;
+  line-height: 150%;
+  resize: vertical;
+}
+
+.btnPosition {
+  font-family: "Montserrat";
+  width: 100%;
+  background: #2c4859;
+  border-radius: 5px;
+  border: 0;
+  cursor: pointer;
+  color: white;
+  font-size: 24px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  transition: all 0.3s;
+  margin-top: -4px;
+  font-weight: 700;
+}
+
+[type="submit"]:hover {
+  background: #d16c0d;
+}

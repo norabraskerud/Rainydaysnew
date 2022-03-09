@@ -36,13 +36,13 @@ newApiCall();
 
 function createHtml(results){
         
-        DetailContainer.innerHTML +=   `                                                
+        DetailContainer.innerHTML +=   ` <div class="detailsdesign">                                               
                                          <h1 class="name">${results.name}</h1>
-                                        <div class="results-image" 
+                                        <div class="details-image" 
                                         style="background-image: url('${results.images[0].src}')"></div>
                                         <h3 class="price">${results.prices.price}</h3>
-                                         <button class="select">${results.add_to_cart.text}</button>
-                                        `;
+                                         <button class="btn">${results.add_to_cart.text}</button>
+                                        </div>`;
 }
 
 
