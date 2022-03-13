@@ -94,15 +94,13 @@ input[type="searchbutton"] {
 .column {
   flex: 28%;
   padding: 0 4px;
-
 }
 
 .column img {
-width: 100%;
+  width: 100%;
 }
 
-
-.row{
+.row {
   display: flex;
   flex-wrap: wrap;
   padding: 0 4px;
@@ -115,18 +113,8 @@ div.indextext {
   text-align: center;
 }
 
-p{
-  padding-left: 50px;
-  padding-right: 50px;
-}
-
-
 .indexsenter {
-  align-content: center;
-}
-
-.indexfoot {
-  margin-top: 500px;
+  text-align: center;
 }
 
 footer {
@@ -139,7 +127,7 @@ footer {
 
 .btn {
   font-family: "bebas neue";
-  font-weight:7500;
+  font-weight: 7500;
   letter-spacing: 1px;
   font-size: 20px;
   text-decoration: none;
@@ -153,6 +141,22 @@ footer {
 }
 
 .btn:hover {
+  background-color: white;
+  color: #d16c0d;
+  border: 2px solid #d16c0d;
+}
+
+.btn a {
+  text-decoration: none;
+  color: white;
+  padding: 10px;
+  font-size: 20px;
+  border: 0;
+  border: none;
+  background: #2c4859;
+}
+
+.btn a:hover {
   background-color: white;
   color: #d16c0d;
   border: 2px solid #d16c0d;
